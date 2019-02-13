@@ -67,3 +67,10 @@ section div {
 section img {
     position: relative;
 }
+
+div.stamps {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
