@@ -18,6 +18,16 @@ header {
     z-index: 1;
 }
 
+header img {
+    /* need to add width as a default b/c this is an .svg */
+    width: 136px; 
+    transition: width 0.5s;
+}
+
+header.scrolled img{
+    width: 64px;
+}
+
 body {
     font-family: "Syne", Helvetica, Arial, sans-serif;
     font-size: 32px;
@@ -27,6 +37,8 @@ body {
     color: #15403d;
     margin: 240px auto 240px auto;
     max-width: 1120px;
+
+    transition: background-color 0.5s;
 }
 
 p {
@@ -49,6 +61,7 @@ section:nth-child(even) {
 
 section div {
     padding: 40px;
+    position: relative;
 }
 
 section img {
