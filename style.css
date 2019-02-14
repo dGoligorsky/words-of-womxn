@@ -1,3 +1,8 @@
+@keyframes spin {
+    0% {transform: translate(-50%, -50%) rotate(0deg);}
+    100% {transform: translate(-50%, -50%) rotate(360deg);}
+}
+
 @font-face {
     font-family: "Syne";
     src: url("assets/syne-regular.woff2"), url("assets/syne-regular.woff");
@@ -38,6 +43,8 @@ body {
     margin: 240px auto 240px auto;
     max-width: 1120px;
 
+    overflow-x: hidden;
+
     transition: background-color 0.5s;
 }
 
@@ -71,6 +78,11 @@ section img {
 div.stamps {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    width: 50%;
+}
+
+div.stamps img {
+    position: absolute;
+    animation: spin 30s linear;
 }
